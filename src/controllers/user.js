@@ -82,8 +82,7 @@ exports.signin=(req,res)=>{
             })
             .catch((e)=>{
                 req.flash('err',e)
-                res.status(200).send({test:'dasdta'})
-                // res.redirect('/signin')
+                res.redirect('/signin')
             })
     }catch(e){
         res.status(500).json(e)
