@@ -1,0 +1,25 @@
+<% if(typeof msg !== undefined && msg.length){ %>
+    <script>//FOR ALERT
+        const message= <%- JSON.stringify(msg) %>
+        swal("Congratulations", `${message}`, "success");
+    </script>
+<%}%>
+
+
+<% if(typeof errors !== 'undefined' && errors.length){%>
+    <% for(var i=0;i<errors.length;i++){%>
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            <!-- FOR WARNINGS -->
+            <%= errors[i].msg%>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+    <%}%>
+<%}%>
+
+
+<% if(typeof err !== undefined && err.length){ %>
+    <div class="alert alert-danger" role="alert">
+        <!-- FOR ERRORS -->
+        <%= err%>
+    </div>
+<%}%>

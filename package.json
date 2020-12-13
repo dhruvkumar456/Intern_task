@@ -1,0 +1,34 @@
+{
+  "name": "task",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test": "jest --watchAll"
+  },
+  "jest": {
+    "testEnviroment": "node"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.5",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "express-validator": "^6.8.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.10.0",
+    "trim-request": "^1.0.6"
+  },
+  "devDependencies": {
+    "jest": "^23.6.0",
+    "supertest": "^3.4.1"
+  }
+}
